@@ -18,6 +18,9 @@ body{
   font-style: normal;
   overflow-x: hidden;
 }
+.starnav{
+    display: block;
+}
 .starnav li{
     list-style-type: none;
     color:white;
@@ -46,13 +49,11 @@ body{
 }
 #bars{
     font-size:64px;
-    position: relative;
-    left:90%;
-    margin:10px;
+    margin-left:90%;
     display:none;
 
 }
-@media(max-width:1041px){
+@media(max-width:1025px){
     .nav{
         display: none;
     }
@@ -67,6 +68,9 @@ body{
     }
     .nav .starnav{
         display: hidden;
+    }
+    .innernav{
+        margin-top:20px;
     }
 }
 .hero{
@@ -200,6 +204,31 @@ body{
     border-radius: 40px;
     box-shadow: 10px 10px 30px black;
 }
+#bars2{
+    display:none;
+    margin-left:90%;
+    font-size: 64px;
+}
+@media(max-width:1025px){
+    .nav2{
+        display: none;
+    }
+    #bars2{
+        display:block;
+    }
+    #check2:checked~.nav2{
+        display:block;
+    }
+    .midnav2{
+        display:block;
+    }
+    .starnav2{
+        display:hidden;
+    }
+    .innernav2{
+        margin-top: 20px;
+    }
+}
 .hiro2{
     display: flex;
     justify-content: space-evenly;
@@ -306,20 +335,11 @@ body{
     font-size: 56px;
     padding-left: 0px;
 }
-@media(max-width:769px){
-    .hiiro .hiiro1 .hiiro11{
-        padding-left: 50px;
-    }
-}
+
 .hiiro .hiiro2 .hiiro21{
     color:orange;
     font-size: 56px;
     padding-left: 0px;
-}
-@media(max-width:769px){
-    .hiiro .hiiro2 .hiiro21{
-        padding-left: 50px;
-    }
 }
 .resume{
     font-family: "Londrina Outline", sans-serif;
@@ -511,6 +531,12 @@ transition: scale 1s;
     }
     .hiro2 .hiro21 .hiro211{
         padding-top: 100px;
+    }
+    .hiiro .hiiro1 .hiiro11{
+            padding-left: 50px;
+    }
+    .hiiro .hiiro2 .hiiro21{
+            padding-left: 50px;
     }
 }
 @media(max-width:426px){
